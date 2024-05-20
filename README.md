@@ -11,6 +11,10 @@ This project provides a web-based tool using React to compress documents by redu
 - **Batch processing** to handle multiple files at once
 - **User-friendly interface** built with React
 
+## Demo
+
+Check out the live demo of the project [here](https://tenlekdan.github.io/document-compressor/).
+
 ## Requirements
 
 - Node.js
