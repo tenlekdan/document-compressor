@@ -1,30 +1,89 @@
-# React + TypeScript + Vite
+# Document Compression Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project provides a web-based tool using React to compress documents by reducing their quality, effectively decreasing their file size. It supports various image formats including JPEG, PNG, WebP, and BMP. This can be particularly useful for saving storage space, optimizing images for web usage, or reducing the bandwidth needed for transferring images over the internet.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Compression of JPEG, PNG, WebP, and BMP formats**
+- **Adjustable quality settings** to control the level of compression
+- **Batch processing** to handle multiple files at once
+- **User-friendly interface** built with React
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Requirements
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js
+- npm or yarn
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/yourusername/document-compression.git
+    cd document-compression
+    ```
+
+2. Install the required dependencies:
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+## Usage
+
+1. Start the development server:
+
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+
+2. Open your browser and navigate to http://localhost:3000.
+
+3. Upload the images you want to compress using the interface.
+
+4. Adjust the quality settings as needed.
+
+5. Download the compressed images.
+
+## Project Structure
+
+document-compression/
+├── public/
+│ ├── index.html
+│ └── ...
+├── src/
+│ ├── components/
+│ │ ├── ImageUploader.js
+│ │ ├── ImageCompressor.js
+│ │ └── ...
+│ ├── App.js
+│ ├── index.js
+│ └── ...
+├── package.json
+
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or new features.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- React
+- Pillow
