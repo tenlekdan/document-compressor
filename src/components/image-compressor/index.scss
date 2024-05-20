@@ -1,0 +1,106 @@
+.file-uploader{
+    border: dashed 1px #000;
+    border-radius: 5px;
+    width: 70vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active {
+        border: dashed 1px rgb(22, 150, 241);
+        color: rgb(22, 150, 241);
+    }
+    
+    ::-webkit-file-upload-button {
+        display: none;
+     }
+
+     input[type=file] {
+        display: none;
+     }
+
+     .file-label {
+        cursor: pointer;
+        .icon{
+           display: block;
+            svg {
+               width: 50px;
+               height: 50px;
+            }
+        }
+        .text {
+            .choose-file {
+                text-decoration: underline;
+                font-weight: bold;
+            }
+        }
+     }
+
+}
+
+.file-detials {
+    border: 1px solid rgba(128, 128, 128, 0.568);
+    border-radius: 5px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70vw;
+    .file-name {
+        width: 85%;
+        .read-mode{
+            text-align: left;
+            height: 60px;
+            p {
+                display: inline-block;
+                padding: 3px; 
+                margin-right: 3px;
+            }
+    
+            button {
+                border: none;
+                padding: 3px;
+                color: rgba(117, 160, 211, 0.926);
+            }
+        }
+
+        .edit-mode{
+            text-align: left;
+            height: 60px;
+            padding: 5px;
+            input {
+                font-size: 1rem;
+                padding: 3px;
+            }
+            .ok{
+                margin-left: 5px;
+                width: 60px;
+                height: 29px;
+                font-size: 15px;
+                background-color: white;
+                color:#000;
+                border-radius: 3px;
+                line-height: 1px;
+                border: solid 1px #000;
+            }
+        }
+
+        .file-content {
+            padding: 5px;
+            font-size: 1rem;
+            color: rgba(128, 128, 128, 0.676);
+            text-align: start;
+        }
+    }
+
+    .compress-btn {
+        width: 100px;
+        height: 45px;
+        padding: 10px;
+        margin-left: auto;
+        background-color: #fff;
+        color: #000;
+        border: solid 1px #000;
+    }
+}
